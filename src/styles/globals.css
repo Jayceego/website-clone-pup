@@ -7,24 +7,62 @@ body {
   color: white;
 }
 
-header nav {
+nav {
   background-color: rgba(255, 255, 255, 0.36);
   -webkit-backdrop-filter: blur(10px) saturate(125%);
           backdrop-filter: blur(10px) saturate(125%);
   border-bottom: 1px solid #f2f2f2;
 }
-header nav :last-child {
-  margin-left: 0;
+nav ul :last-child {
+  display: inline;
 }
-header nav :nth-child(5) {
+nav ul :nth-child(1), nav ul :nth-child(2) {
+  display: inline-flex;
+}
+nav ul li {
+  white-space: nowrap;
   display: none;
 }
 
-@media (min-width: 1025px) {
-  header nav :last-child {
+@media (min-width: 270px) {
+  nav {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 769px) {
+  main > * {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: inline-flex;
+  }
+  nav ul :nth-child(5) {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  nav ul :nth-child(5) {
+    display: inline-flex;
+  }
+  nav ul :last-child {
     margin-left: auto;
   }
-  header nav :nth-child(5) {
+  main > * {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  main > * {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  nav :last-child {
+    margin-left: auto;
+  }
+  nav :nth-child(5) {
     display: inline-flex;
   }
 }/*# sourceMappingURL=globals.css.map */
