@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
   font-family: Inter, "Noto Sans", sans-serif;
@@ -10,88 +11,98 @@ body {
 }
 
 
-nav{
-  background-color: rgba(255,255,255,0.36);
-  backdrop-filter: blur(10px) saturate(125%);
-  border-bottom: 1px solid #f2f2f2;
-  ul{
-    :last-child{
-      display: inline;
-    }
-    :nth-child(1), :nth-child(2){
-      display: inline-flex;
-    }
-    li{
-      white-space: nowrap;
-      display: none;
+.wrapper{
+  background-image: url("/nav-bg.jpg");
+  display: grid;
+  place-items: center;
+
+  .nav{
+    min-width: 100vw;
+    background-color: rgba(255,255,255,0.36);
+    backdrop-filter: blur(10px) saturate(125%);
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+    .container{
+      nav{
+        ul{
+          :last-child{
+            display: inline;
+          }
+          :nth-child(1), :nth-child(2){
+            display: inline-flex;
+          }
+          li{
+            white-space: nowrap;
+            display: none;
+          }
+        }
+      }
     }
   }
-}
+
+
+
+
+
+
 
 
 // Media Responsiveness
 // mobile
-@media (max-width: 270px) {
+@media (min-width: 270px) {
 
 }
 
 // small tablet 
-@media (min-width: 270px) { 
-  nav{
-    max-width: 270px;
-    margin: 0 auto;
+@media (min-width: 481px) {
+  .wrapper .container  > * {
+    max-width: 970px;
   }
-  
+
 }
 
 // tablet 
-@media (min-width: 769px){
-  main > * {
-    max-width: 750px;
-    margin: 0 auto;
-  }
-  nav{
-    ul{
-      li{
-        display: inline-flex;
-      }
-      :nth-child(5){
-        display: none;
-      }
-    }
-  }
-}
-
-// laptop 
-@media (min-width: 992px){
-  nav{
-    ul{
-      :nth-child(5){
-        display: inline-flex;
-      }
-      :last-child{
-        margin-left: auto;
+@media (min-width: 768px){
+  .wrapper{
+    .container{
+      nav{
+        ul{
+          :last-child{
+            margin-left: auto;
+          }
+          :nth-child(5){
+            display: none;
+          }
+          li{
+            display: inline-flex;
+          }
+        }
+        
       }
     }
   }
-  main > * {
+  .wrapper .container  > * {
     max-width: 970px;
-    margin: 0 auto;
   }
+
 }
 
 // desktop 
-@media (min-width: 1200px){
-  main > * {
+@media (min-width: 1025px){
+  .wrapper .container  > * {
     max-width: 1170px;
-    margin: 0 auto;
   }
-  nav{
-    :last-child{
-      margin-left: auto;
-    }
-    :nth-child(5){
-      display: inline-flex;
+  .wrapper{
+    .container{
+      nav{
+        :last-child{
+          margin-left: auto;
+        }
+        :nth-child(5){
+          display: inline-flex;
+        }
+      }
     }
   }
 }

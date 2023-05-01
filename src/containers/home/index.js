@@ -1,5 +1,7 @@
 import Navbar from "@/components/navbar"
+import Header from "@/components/header"
 import Image from "next/image"
+import Head from "next/head"
 
 const NavigationItems = [
   {
@@ -28,10 +30,18 @@ const NavigationItems = [
   }
 ]
 
+
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Polytechnic University of the Philippines</title>
+    </Head>
+
+    <div className="wrapper">
       <Navbar items={NavigationItems} />
+      <Header/>
+    </div>
     </>
   )
 }
