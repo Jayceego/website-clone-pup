@@ -1,26 +1,37 @@
 import Navbar from "@/components/navbar"
+import Image from "next/image"
 
 const NavigationItems = [
   {
     title: "Home",
-    url: "/"
+    url: "/#",
   },
   {
-    title: "About",
-    url: "/about"
+    title: "Good Governance",
+    url: "/#",
   },
   {
-    title: "Contact",
-    url: "/contact"
+    title: "Transparency",
+    url: "/#",
+  },
+  {
+    title: "International Affairs",
+    url: "/#",
+  },
+  {
+    title: "Bid Notices and Invitation",
+    url: "/#",
+  },
+  {
+    title: "Contact us",
+    url: "/#",
   }
 ]
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-between min-h-screen p-24">
+    <>
       <Navbar items={NavigationItems} />
-      <h1 className="welcome">Welcome to my website!</h1>
-      <p>This is the homepage.</p>
-    </main>
+    </>
   )
 }
