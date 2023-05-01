@@ -6,7 +6,7 @@ import Link from 'next/link';
 function Header() {
   return (
     <div className='container bg-primary-dark_red md:bg-transparent'>
-      <header className="flex mx-auto ">
+      <header className="flex items-center mx-auto">
         <div className='flex items-center justify-between w-screen md:w-auto'>
           <a href='#'>
               <Image 

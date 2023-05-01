@@ -54,10 +54,10 @@ body {
   .wrapper .container > * {
     max-width: 1170px;
   }
-  .wrapper .container nav :last-child {
+  .wrapper .container nav ul :last-child {
     margin-left: auto;
   }
-  .wrapper .container nav :nth-child(5) {
+  .wrapper .container nav ul :nth-child(5) {
     display: inline-flex;
   }
 }/*# sourceMappingURL=globals.css.map */

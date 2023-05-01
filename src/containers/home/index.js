@@ -1,5 +1,7 @@
 import Navbar from "@/components/navbar"
 import Header from "@/components/header"
+import Slider from "@/components/slider"
+import Categories from "@/components/categories"
 import Image from "next/image"
 import Head from "next/head"
 
@@ -42,6 +44,8 @@ export default function Home() {
       <Navbar items={NavigationItems} />
       <Header/>
     </div>
+    <Slider/>
+    <Categories/>
     </>
   )
 }

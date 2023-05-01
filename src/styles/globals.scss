@@ -96,11 +96,13 @@ body {
   .wrapper{
     .container{
       nav{
-        :last-child{
-          margin-left: auto;
-        }
-        :nth-child(5){
-          display: inline-flex;
+        ul{
+          :last-child{
+            margin-left: auto;
+          }
+          :nth-child(5){
+            display: inline-flex;
+          }
         }
       }
     }
