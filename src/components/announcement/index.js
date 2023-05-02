@@ -26,8 +26,10 @@ const articles = [
 
 function Announcement() {
   return (
-    <div className="max-w-[20vw]">  
-        <a href="#" className="pb-2 my-4 text-primary-red border-b-[1px] font-bold border-solid border-primary-red">Announcement and Advisories</a> 
+    <div className="px-4 mb-7">  
+        <div className="article-title pb-[6px] border-b-[1px] font-bold border-solid border-primary-light_dark">
+            <a href="#" className="pb-2 my-4 text-primary-red border-b-[1px] font-bold border-solid border-primary-red">Announcement and Advisories</a> 
+        </div>
         <ul className="pr-3 mt-5 scrollbar">
             {articles.map((article, index) => (
                 <li key={index} className="max-w-[340px] grid gap-2">
