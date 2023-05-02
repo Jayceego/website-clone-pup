@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar"
 import Header from "@/components/header"
 import Slider from "@/components/slider"
 import Categories from "@/components/categories"
+import Articles from "../articles"
 import Line from "@/components/line"
 import Head from "next/head"
 
@@ -44,7 +45,8 @@ export default function Home() {
     <Slider/>
     <Categories/>
     <Line/>
-    <Categories/>
+    <Articles/>
+    <Line/>
     </>
   )
 }

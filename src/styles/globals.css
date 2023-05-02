@@ -68,6 +68,20 @@ body {
   background-color: #800;
 }
 
+.scrollbar {
+  height: 600px;
+  overflow-y: scroll;
+}
+.scrollbar ::-webkit-scrollbar {
+  width: 20px;
+  color: #d6dee1;
+}
+
+.hr > * {
+  margin: 30px 0;
+  background-color: rgba(0, 0, 0, 0.047) !important;
+}
+
 @media (min-width: 481px) {
   .wrapper .container > * {
     max-width: 970px;
