@@ -12,6 +12,7 @@ body {
   background-image: url("/nav-bg.jpg");
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
 .wrapper .nav {
   min-width: 100vw;
@@ -19,6 +20,9 @@ body {
   -webkit-backdrop-filter: blur(10px) saturate(125%);
           backdrop-filter: blur(10px) saturate(125%);
   border-bottom: 1px solid #f2f2f2;
+}
+.wrapper .container {
+  overflow-x: hidden;
 }
 .wrapper .container nav ul :last-child {
   display: inline;
@@ -29,6 +33,20 @@ body {
 .wrapper .container nav ul li {
   white-space: nowrap;
   display: none;
+}
+
+.categories {
+  overflow-x: hidden;
+}
+.categories a .circle {
+  box-sizing: border-box;
+  border-spacing: 5rem;
+  border: 3px solid #800;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 @media (min-width: 481px) {

@@ -1,35 +1,53 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaRegEdit } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { FaCubes } from "react-icons/fa";
 
-const categories = [
-    { title: 'Category 1', image: '/category-1.jpg' },
-    { title: 'Category 2', image: '/category-2.jpg' },
-    { title: 'Category 3', image: '/category-3.jpg' },
-    { title: 'Category 4', image: '/category-4.jpg' },
-  ];
-  
-  const Category = ({ title, image }) => {
-    return (
-      <div className='relative overflow-hidden rounded-lg shadow-md'>
-        <Image
-          src={image}
-          alt={title}
-          width={1000}
-          height={600}
-        />
-        <div className='absolute inset-0 flex items-center justify-center'>
-          <h2 className='text-3xl font-bold text-white'>{title}</h2>
-        </div>
+function Categories() {
+  return (
+    <div className='container flex mx-auto my-6 justify-evenly categories text-primary-red'>
+      <div className="flex flex-col items-center text-center icons">
+        <a href="#" className="relative grid w-20 mb-5 place-items-center">
+          <FaRegEdit className="absolute w-[2em] h-auto text-primary-red"/>
+          <div className="w-[4.5rem] h-[4.5rem] circle"></div>
+        </a>
+        <a className="font-semibold ">
+          Apply Now
+        </a>
       </div>
-    );
-  };
-  
-  const Categories = () => {
-    return (
-      <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
-        {categories.map((category) => (
-          <Category key={category.title} {...category} />
-        ))}
+
+      <div className="flex flex-col items-center text-center icons">
+        <a href="#" className="relative grid w-20 mb-5 place-items-center">
+          <FaStar className="absolute w-[2em] h-auto text-primary-red"/>
+          <div className="w-[4.5rem] h-[4.5rem] circle"></div>
+        </a>
+        <a href="#" className="font-semibold">
+          Attend an Event
+        </a>
       </div>
-    );
-  };
-  
+
+      <div className="flex flex-col items-center justify-center text-center icons">
+        <a href="#" className="relative grid w-20 mb-5 place-items-center">
+          <FaCubes className="absolute w-[2em] h-auto text-primary-red"/>
+          <div className="w-[4.5rem] h-[4.5rem] circle"></div>
+        </a>
+        <a className="font-semibold max-w-[6rem] xl:max-w-none">
+        PUP and Sustainability <br/> Development Programs
+        </a>
+      </div>
+
+      <div className="flex flex-col items-center text-center icons">
+        <a href="#" className="relative grid w-20 mb-5 place-items-center">
+          <FaCubes className="absolute w-[2em] h-auto text-primary-red"/>
+          <div className="w-[4.5rem] h-[4.5rem] circle"></div>
+        </a>
+        <a className="font-semibold">
+          Campus Life
+        </a>
+      </div>
+    </div>
+  )
+}
+
+export default Categories;
