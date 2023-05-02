@@ -13,6 +13,7 @@ body {
 
 .wrapper{
   background-image: url("/nav-bg.jpg");
+  background-position: center;
   display: grid;
   place-items: center;
   overflow-x: hidden;
@@ -95,15 +96,34 @@ body {
   background-color: rgba(0, 0, 0, 0.047) !important;
 }
 
+.article-title{
+  .buttons{
+    .prev, .next{
+      border: 1px solid rgba(0, 0, 0, 0.152);
+    }
+    .prev:hover, .next:hover{
+      background-color: #800;
+      color: #f2f2f2;
+      transition: .7s;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -ms-transition: .7s;
+      -o-transition: .7s;
+    }
+  }
+}
+
 .news{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   .phivolcs{
-    width: 100%;
+    width: clamp(100px, 100%, 650px);
+    z-index: -10;
     height: 500px;
     background-size: cover;
+    background-color: #800;
     background-image: url("/phivolcs.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -126,6 +146,32 @@ body {
     }
   }
 }
+
+.news:hover{
+      transition: .7s;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -ms-transition: .7s;
+      -o-transition: .7s;
+  .phivolcs{
+    .red-shade{
+      width: clamp(100px, 100%, 650px);
+      height: 500px;
+      background-color: rgba(136, 0, 0, 0.668);
+      z-index: -5;
+    }
+    .file-icon{
+      display: block;
+      margin-bottom: 0;
+      transition: .4s;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -ms-transition: .4s;
+      -o-transition: .4s;
+    }
+  }
+}
+
 
 
 // Media Responsiveness
