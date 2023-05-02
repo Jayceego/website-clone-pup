@@ -6,8 +6,8 @@ import { FaCubes } from "react-icons/fa";
 
 function Categories() {
   return (
-    <div className='container flex mx-auto my-6 justify-evenly categories text-primary-red'>
-      <div className="flex flex-col items-center text-center icons">
+    <div className='container flex mx-auto mt-[60px] justify-evenly categories text-primary-red'>
+      <div className="flex flex-col items-center mb-10 text-center cursor-pointer icons">
         <a href="#" className="relative grid w-20 mb-5 place-items-center">
           <FaRegEdit className="absolute w-[2em] h-auto text-primary-red"/>
           <div className="w-[4.5rem] h-[4.5rem] circle"></div>
@@ -17,7 +17,7 @@ function Categories() {
         </a>
       </div>
 
-      <div className="flex flex-col items-center text-center icons">
+      <div className="flex flex-col items-center mb-10 text-center cursor-pointer icons">
         <a href="#" className="relative grid w-20 mb-5 place-items-center">
           <FaStar className="absolute w-[2em] h-auto text-primary-red"/>
           <div className="w-[4.5rem] h-[4.5rem] circle"></div>
@@ -27,17 +27,17 @@ function Categories() {
         </a>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center icons">
+      <div className="flex flex-col items-center mb-10 text-center cursor-pointer icons">
         <a href="#" className="relative grid w-20 mb-5 place-items-center">
           <FaCubes className="absolute w-[2em] h-auto text-primary-red"/>
           <div className="w-[4.5rem] h-[4.5rem] circle"></div>
         </a>
-        <a className="font-semibold max-w-[6rem] xl:max-w-none">
+        <a className="font-semibold max-w-[6rem] lg:max-w-none">
         PUP and Sustainability <br/> Development Programs
         </a>
       </div>
 
-      <div className="flex flex-col items-center text-center icons">
+      <div className="flex flex-col items-center mb-10 text-center cursor-pointer icons">
         <a href="#" className="relative grid w-20 mb-5 place-items-center">
           <FaCubes className="absolute w-[2em] h-auto text-primary-red"/>
           <div className="w-[4.5rem] h-[4.5rem] circle"></div>

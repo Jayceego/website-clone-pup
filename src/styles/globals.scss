@@ -43,6 +43,10 @@ body {
     }
     
 }
+.line{
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0, 0, 0, 0.15), rgba(0,0,0,0));
+}
 
 .categories{  
   overflow-x: hidden;
@@ -56,7 +60,23 @@ body {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-      
+      transition: .4s;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -ms-transition: .4s;
+      -o-transition: .4s;
+    }
+  }
+
+  .icons:hover{
+    :nth-child(2){
+      text-decoration: underline;
+    }
+    :first-child{
+      color: white;
+    }
+    .circle{
+      background-color: #800;
     }
   }
 }
