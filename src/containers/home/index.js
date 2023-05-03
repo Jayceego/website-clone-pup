@@ -4,6 +4,7 @@ import Slider from "@/components/slider"
 import Categories from "@/components/categories"
 import Articles from "../articles"
 import Medias from "@/components/media"
+import FooterGov from "../footer"
 import Line from "@/components/line"
 import Head from "next/head"
 
@@ -47,10 +48,9 @@ export default function Home() {
     <Categories/>
     <Line/>
     <Articles/>
-    <div >
-      <Line/>
-    </div>
+    <Line/>
     <Medias/>
+    <FooterGov/>
     </>
   )
 }
