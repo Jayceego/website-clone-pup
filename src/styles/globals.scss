@@ -175,7 +175,9 @@ body {
   }
 }
 
-
+#twitter-widget-0, .twitter-timeline {
+  width: 91vw !important;
+}
 
 
 // Media Responsiveness
@@ -211,6 +213,9 @@ body {
   .container  > * {
     max-width: 750px;
   }
+  #twitter-widget-0, .twitter-timeline {
+    max-width: 690px !important;
+  }
 
 
 }
@@ -240,6 +245,9 @@ body {
     .img{
       width: 210px;
     }
+  }
+  #twitter-widget-0, .twitter-timeline {
+    max-width: 360px !important;
   }
 }
 

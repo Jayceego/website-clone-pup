@@ -26,7 +26,7 @@ const articles = [
 
 function Announcement() {
   return (
-    <div className="px-4 mx-auto lg:w-3/12 lg:min-w-[340px] lg:m-0 mb-7">  
+    <div className="px-4 mx-auto lg:w-[20%] lg:min-w-[340px] lg:m-0 mb-7">  
         <div className="article-title pb-[6px] border-b-[1px] font-bold border-solid border-primary-light_dark">
             <a href="#" className="pb-2 my-4 text-primary-red border-b-[1px] font-bold border-solid border-primary-red">Announcement and Advisories</a> 
         </div>

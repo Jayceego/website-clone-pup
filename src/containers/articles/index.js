@@ -4,7 +4,7 @@ import Blogs from "@/components/blogs";
 
 function Articles() {
   return (
-    <div className="container block w-8/12 mx-auto articles ">
+    <div className="container block mx-auto articles ">
       <Announcement/>
       <News/>
       <Blogs />

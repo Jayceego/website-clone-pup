@@ -3,6 +3,7 @@ import Header from "@/components/header"
 import Slider from "@/components/slider"
 import Categories from "@/components/categories"
 import Articles from "../articles"
+import Medias from "@/components/media"
 import Line from "@/components/line"
 import Head from "next/head"
 
@@ -46,7 +47,10 @@ export default function Home() {
     <Categories/>
     <Line/>
     <Articles/>
-    <Line/>
+    <div >
+      <Line/>
+    </div>
+    <Medias/>
     </>
   )
 }
