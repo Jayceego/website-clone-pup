@@ -47,7 +47,6 @@ export default function Home() {
     <Line/>
     <Articles/>
     <Line/>
-    <Slider/>
     </>
   )
 }
