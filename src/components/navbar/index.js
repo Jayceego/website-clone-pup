@@ -10,15 +10,15 @@ return (
             </a>
         </li>
     </Link>
-)
+    )
 }
 
 const Navbar = ({ items }) => {
 return (
-    <div className='container nav'>
-        <nav className='text-[10pt] mx-auto'>
-        <ul className='flex items-center justify-center'>
-            <li className='px-4 transition-colors duration-200 cursor-pointer place-items-center hover:bg-primary-red'>
+    <div className='nav'>
+        <nav className=' container text-[10pt] mx-auto'>
+        <ul className='flex items-center justify-center mx-auto'>
+            <li className='px-4 transition-colors duration-200 cursor-pointer place-items-center hover:bg-primary-red '>
                 <a href='https://www.gov.ph/' className='py-[3px]'>
                     <Image 
                     className='min-w-[33px]'

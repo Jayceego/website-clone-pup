@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <div className='container bg-primary-dark_red md:bg-transparent'>
+    <div className='container header bg-primary-dark_red md:bg-transparent'>
       <header className="flex items-center mx-auto">
         <div className='flex items-center justify-between w-screen md:w-auto'>
           <a href='#'>
@@ -39,7 +39,7 @@ function Header() {
             <li className='pt-[10px] px-5'>
               <a>Students</a>
             </li>
-            <li className='pt-[10px] px-5'>
+            <li className='pt-[10px] px-5 '>
               <a>Research</a>
             </li>
           </ul>

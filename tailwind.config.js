@@ -16,9 +16,11 @@ module.exports = {
           dark_gray: '#888',
         },
       },
+      
       fontFamily: {
         cinzel: ['Cinzel', 'serif'],
       },
+      
     },
   },
   plugins: [],

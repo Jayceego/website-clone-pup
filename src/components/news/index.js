@@ -5,9 +5,9 @@ import Image from "next/image";
 
 function News() {
     return (
-        <div className="px-4 cursor-pointer mb-7">  
-            <div className="article-title flex items-center justify-between pb-[6px] mb-6 border-b-[1px] font-bold border-solid border-primary-light_dark">
-                <a href="#" className="pb-2 mb-4 text-primary-red border-b-[1px] font-bold border-solid border-primary-red">Latest News from the University</a> 
+        <div className="px-4 mx-auto cursor-pointer lg:m-0 xl:w-[27%] mb-7">  
+            <div className="article-title flex items-center justify-between mb-6 border-b-[1px] font-bold border-solid border-primary-light_dark">
+                <a href="#" className="pb-2 text-primary-red border-b-[1px] font-bold border-solid border-primary-red">Latest News from the University</a> 
                 <div className="flex gap-1 mb-3 buttons">
                     <div className="prev px-[2px] py-[1px] text-primary-low_dark">
                         <MdOutlineKeyboardArrowLeft/>
