@@ -6,6 +6,7 @@ body {
   font-family: Inter, "Noto Sans", sans-serif;
   font-size: 1rem;
   color: white;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -149,6 +150,10 @@ body {
   -o-transition: 0.4s;
 }
 
+.footer-pup {
+  background-color: #eee;
+}
+
 #twitter-widget-0, .twitter-timeline {
   width: 91vw !important;
 }
@@ -191,7 +196,7 @@ body {
     max-width: 750px;
   }
   #twitter-widget-0, .twitter-timeline {
-    max-width: 690px !important;
+    width: clamp(100px, 91vw, 690px) !important;
   }
 }
 @media (min-width: 1025px) {
@@ -212,7 +217,10 @@ body {
     width: 210px;
   }
   #twitter-widget-0, .twitter-timeline {
-    max-width: 360px !important;
+    width: clamp(100px, 30vw, 360px) !important;
+  }
+  .spotify, .yt {
+    width: clamp(100px, 52vw, 750px);
   }
 }
 @media (min-width: 1201px) {

@@ -6,8 +6,8 @@ import Quicklinks from "../quick-link";
 
 function PupLinks() {
   return (
-    <div className="mx-auto ">
-      <div className="flex">
+    <div className="mx-auto pt-[60px]">
+      <div className="flex justify-center">
         <div className="w-full lg:w-1/4 service-download">
           <Services />
           <Download />

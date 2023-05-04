@@ -10,7 +10,7 @@ function Socmed() {
   return (
     <div>
       <FooterItem title="Keep in touch" />
-      <div className="flex gap-5 mt-3 socmed-icons">
+      <div className="flex flex-wrap gap-5 mt-3 socmed-icons">
         <div className="fb">
           <FaFacebookF />
         </div>
