@@ -3,11 +3,13 @@ import Download from "../download-link";
 import Services from "../service-link";
 import Socmed from "../socmed";
 import Quicklinks from "../quick-link";
+import Contact from "../contact-link";
+import Terms from "../terms-link";
 
 function PupLinks() {
   return (
-    <div className="mx-auto pt-[60px]">
-      <div className="flex justify-center">
+    <div className="mx-auto  pt-[60px]">
+      <div className="container lg:flex lg:justify-center">
         <div className="w-full lg:w-1/4 service-download">
           <Services />
           <Download />
@@ -16,8 +18,10 @@ function PupLinks() {
         <div className="w-full quick-links lg:w-1/4">
           <Quicklinks/>
         </div>
-        <div className="w-full socmed lg:w-1/2">
+        <div className="block w-full lg:flex lg:flex-col lg:justify-between socmed lg:w-1/2">
           <Socmed/>
+          <Contact/>
+          <Terms/>
         </div>
       </div>
       {/* copyright */}

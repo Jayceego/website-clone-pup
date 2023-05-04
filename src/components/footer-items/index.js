@@ -1,7 +1,7 @@
 const FooterItem = ({ title, items }) => {
   return (
     <div>
-      <p className="pb-2 text-sm font-bold uppercase text-primary-red">
+      <p className="pb-2 text-sm font-semibold uppercase text-primary-red">
         {title}
       </p>
       <ul>
@@ -10,7 +10,7 @@ const FooterItem = ({ title, items }) => {
             return (
               <a
                 key={key}
-                className="block my-[10px] text-[12pt] text-primary-low_dark font-light select-none hover:underline hover:cursor-pointer"
+                className="block my-[10px] text-[12pt] text-primary-low_dark font-normal select-none hover:underline hover:cursor-pointer"
               >
                 {value}
               </a>

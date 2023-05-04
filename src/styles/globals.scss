@@ -204,6 +204,17 @@ body {
   }
 }
 
+.term {
+  .inner-term{
+      :last-child{
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+
+
 // Media Responsiveness
 // mobile
 @media (min-width: 270px) {
@@ -243,7 +254,6 @@ body {
 
 
 }
-
 
 // desktop 
 @media (min-width: 1025px){

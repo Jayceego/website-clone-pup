@@ -8,7 +8,7 @@ import { FaRss } from "react-icons/fa";
 
 function Socmed() {
   return (
-    <div>
+    <div className="mb-11 lg:mb-0">
       <FooterItem title="Keep in touch" />
       <div className="flex flex-wrap gap-5 mt-3 socmed-icons">
         <div className="fb">
