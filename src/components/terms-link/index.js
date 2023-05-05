@@ -17,7 +17,7 @@ function Terms() {
   return (
     <div className="term mb-11 lg:mb-0">
       <FooterItem title="pupwebsite 10" />
-      <div className="flex inner-term">
+      <div className="flex flex-wrap inner-term">
         {links.map((pup, key) => (
           <div key={key}>
             <a className="text-[12pt] text-primary-low_dark font-normal select-none hover:underline hover:cursor-pointer">
