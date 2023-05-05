@@ -15,7 +15,7 @@ const links = [
 
 function Terms() {
   return (
-    <div className="term mb-11 lg:mb-0">
+    <div className="term">
       <FooterItem title="pupwebsite 10" />
       <div className="flex flex-wrap inner-term">
         {links.map((pup, key) => (

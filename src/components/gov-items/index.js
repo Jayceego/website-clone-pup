@@ -11,7 +11,7 @@ const GovItems = ({ title, items }) => {
               return (
                 <a
                   key={key}
-                  className="block text-[8pt] text-primary-dark_gray font-light leading-6 select-none hover:underline hover:cursor-pointer"
+                  className="block text-[8pt] text-primary-dark_gray font-normal leading-6 select-none hover:underline hover:cursor-pointer"
                 >
                   {value}
                 </a>

@@ -4,7 +4,7 @@ import { useState } from "react";
 function Medias() {
   return (
     <div className="container">
-      <div className="justify-center mx-auto medias lg:flex">
+      <div className="justify-center pb-3 mx-auto lg:pb-0 medias lg:flex">
         <div className="relative flex justify-center mb-5 ">
           <TwitterTimelineEmbed
             className="twitter"

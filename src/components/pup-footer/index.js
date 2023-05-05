@@ -8,7 +8,7 @@ import Terms from "../terms-link";
 
 function PUPFooter() {
   return (
-    <div className="mx-auto  px-[15px] pt-[60px]">
+    <div className="mx-auto px-[15px] pt-[60px]">
       <div className="container lg:flex lg:justify-center">
         <div className="w-full lg:w-1/4 service-download">
           <Services />
