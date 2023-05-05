@@ -154,6 +154,10 @@ body {
   background-color: #eee;
 }
 
+.footer-gov {
+  background-color: #181414;
+}
+
 #twitter-widget-0, .twitter-timeline {
   width: 91vw !important;
 }

@@ -1,10 +1,16 @@
-import PupLinks from "@/components/pup-links";
+import PUPFooter from "@/components/pup-footer";
+import GovFooter from "@/components/gov-footer";
 
 function FooterPup() {
   return (
-    <div className="container footer-pup">
-      <PupLinks />
-    </div>
+    <>
+      <div className="container footer-pup">
+        <PUPFooter />
+      </div>
+      <div className="container footer-gov">
+        <GovFooter />
+      </div>
+    </>
   );
 }
 
