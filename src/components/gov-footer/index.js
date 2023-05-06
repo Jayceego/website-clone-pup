@@ -6,7 +6,7 @@ function GovFooter() {
     <div className="mx-auto lg:flex  pt-[10px] px-[15px] pb-5">
       <div className="flex govlogo">
         <Image
-          className=" max-w-[148px] max-h-[165px] cursor-pointer  rounded-xl img"
+          className=" max-w-[148px] max-h-[165px]  rounded-xl img"
           src="/govph-seal.png"
           alt="Republic of the Philippines Logo"
           width={148}

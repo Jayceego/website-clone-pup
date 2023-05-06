@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function News() {
     return (
-        <div className="px-4 mx-auto cursor-pointer lg:m-0 xl:w-[27%] mb-7">  
+        <div className="px-4 mx-auto cursor-pointer lg:m-0 mb-7">  
             <div className="article-title flex items-center justify-between mb-6 border-b-[1px] font-bold border-solid border-primary-light_dark">
                 <a href="#" className="pb-2 text-primary-red border-b-[1px] font-bold border-solid border-primary-red">Latest News from the University</a> 
                 <div className="flex gap-1 mb-3 buttons">
@@ -19,7 +19,7 @@ function News() {
             </div>
 
             <div className="news"> 
-                <div className="relative grid phivolcs place-items-center">
+                <div className="relative grid lg:min-w-[450px] phivolcs place-items-center">
                     <div className="absolute red-shade"></div>
                     <ImFileText2 className="hidden w-auto h-12 mb-20 file-icon"/>
                 </div>

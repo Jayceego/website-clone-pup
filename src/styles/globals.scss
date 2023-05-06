@@ -118,7 +118,7 @@ body {
   justify-content: space-between;
 
   .phivolcs{
-    width: clamp(100px, 100%, 740px);
+    width: clamp(100px, 100%, 750px);
     z-index: -10;
     height: 500px;
     background-size: cover;
@@ -202,9 +202,35 @@ body {
   -o-border-radius: 50%;
     
     > *{
+      cursor: pointer;
       width: 30px;
       height: auto;
     }
+  }
+  .fb:hover, .twitter:hover, .yt:hover, .linkedin:hover, .rss:hover, .spotify:hover{
+    transition:  all ease .2s;
+    -webkit-transition:  all ease .2s;
+    -moz-transition:  all ease .2s;
+    -ms-transition:  all ease .2s;
+    -o-transition:  all ease .2s;
+  }
+  .fb:hover{
+    background-color: #507CBE;
+  }
+  .twitter:hover{
+    background-color: #63CDF1;
+  }
+  .yt:hover{
+    background-color: #CC3300;
+  }
+  .linkedin:hover{
+    background-color: #90CADD;
+  }
+  .rss:hover{
+    background-color: #f60;
+  }
+  .spotify:hover{
+    background-color: #1DB954;
   }
 }
 

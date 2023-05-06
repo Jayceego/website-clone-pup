@@ -103,7 +103,7 @@ body {
   justify-content: space-between;
 }
 .news .phivolcs {
-  width: clamp(100px, 100%, 740px);
+  width: clamp(100px, 100%, 750px);
   z-index: -10;
   height: 500px;
   background-size: cover;
@@ -177,8 +177,34 @@ body {
   -o-border-radius: 50%;
 }
 .socmed-icons div > * {
+  cursor: pointer;
   width: 30px;
   height: auto;
+}
+.socmed-icons .fb:hover, .socmed-icons .twitter:hover, .socmed-icons .yt:hover, .socmed-icons .linkedin:hover, .socmed-icons .rss:hover, .socmed-icons .spotify:hover {
+  transition: all ease 0.2s;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+}
+.socmed-icons .fb:hover {
+  background-color: #507CBE;
+}
+.socmed-icons .twitter:hover {
+  background-color: #63CDF1;
+}
+.socmed-icons .yt:hover {
+  background-color: #CC3300;
+}
+.socmed-icons .linkedin:hover {
+  background-color: #90CADD;
+}
+.socmed-icons .rss:hover {
+  background-color: #f60;
+}
+.socmed-icons .spotify:hover {
+  background-color: #1DB954;
 }
 
 .term .inner-term :last-child span {
