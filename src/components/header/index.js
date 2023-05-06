@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import Link from 'next/link';
 
+
 function Header() {
   return (
     <div className='container header bg-primary-dark_red md:bg-transparent'>
@@ -22,24 +23,24 @@ function Header() {
 
         <div className='hidden md:block'>
           <div className='mt-5 schoolName font-cinzel'> 
-            <a className='text-lg font-bold leading-none text-primary-red'>
+            <a className='text-lg font-bold leading-none cursor-pointer hover:underline text-primary-red'>
               Polytechnic University of the Philippines <br/>
-              <span className='text-sm leading-5 text-primary-gray divide-solid'>
-              The Country&apos;s 1st PolytechnicU
-              </span>
             </a>
+            <p className='text-sm font-bold leading-5 cursor-pointer text-primary-gray divide-solid'>
+            The Country&apos;s 1st PolytechnicU
+            </p>
           </div>
           <ul className='flex font-bold text-primary-red font-cinzel'>
-            <li className='pt-[10px] px-5 pl-0'>
+            <li className='pt-[10px] px-5 cursor-pointer pl-0'>
               <a>About PUP</a>
             </li>
-            <li className='pt-[10px] px-5'>
+            <li className='pt-[10px] px-5 cursor-pointer'>
               <a>Academic</a>
             </li>
-            <li className='pt-[10px] px-5'>
+            <li className='pt-[10px] px-5 cursor-pointer'>
               <a>Students</a>
             </li>
-            <li className='pt-[10px] px-5 '>
+            <li className='pt-[10px] px-5 cursor-pointer '>
               <a>Research</a>
             </li>
           </ul>

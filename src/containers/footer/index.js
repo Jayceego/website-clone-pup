@@ -1,7 +1,7 @@
 import PUPFooter from "@/components/pup-footer";
 import GovFooter from "@/components/gov-footer";
 
-function FooterPup() {
+function Footer() {
   return (
     <>
       <div className="container footer-pup">
@@ -14,4 +14,4 @@ function FooterPup() {
   );
 }
 
-export default FooterPup;
+export default Footer;
