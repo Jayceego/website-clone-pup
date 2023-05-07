@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const imgSrc = [
@@ -17,13 +18,12 @@ const imgSrc = [
 
 function Slider(imgSwiper) {
   return (
-    <div className="relative">
+    <div className="relative slider">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
         navigation={true}
@@ -36,7 +36,7 @@ function Slider(imgSwiper) {
               src={src}
               alt="Slide 1"
               width={1800}
-              height={700}
+              height={300}
             />
           </SwiperSlide>
         ))}
