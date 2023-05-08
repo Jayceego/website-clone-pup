@@ -247,6 +247,8 @@ body {
   }
 
 .modal-container{
+  background: rgba(0, 0, 0, 0.822);
+  backdrop-filter: blur(20px);
   transition: transform .3s ease-out;
 }
 
@@ -257,6 +259,7 @@ body {
   background-position: bottom center;
   padding: 15px;
   box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+  overflow-y: auto;
   
   svg{
     height: 18px;
@@ -336,6 +339,9 @@ body {
         }
       }
     }
+  }
+  .modal-container{
+    padding-top: 2rem;
   }
   .modal{
     max-width: 600px;

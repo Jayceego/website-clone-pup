@@ -54,12 +54,12 @@ const modalItems = [
 
 function Modal() {
   return (
-    <div className="fixed z-10 w-screen h-screen m-3 mx-auto modal-container">
+    <div className="fixed z-10 w-screen h-screen p-3 mx-auto modal-container">
       <div className="relative mx-auto modal ">
         <div className="mx-auto text-center modal-title ">
-          <h1 className="mt-8 text-base font-bold leading-7 uppercase mb-9 text-primary-red font-cinzel">
+          <h1 className="mt-8 text-base font-bold uppercase mb-9 text-primary-red font-cinzel">
             welcome to the <br />
-            <span className="text-[22px] font-semibold ">
+            <span className="text-[22px] leading-7 font-bold ">
               Polytechnic University of the Philippines
             </span>
           </h1>
@@ -67,15 +67,15 @@ function Modal() {
         </div>
 
         <div className="below">
-          <div className="flex flex-col w-full items-center px-[15px] mx-auto modal-img">
+          <div className="flex flex-col w-full items-center pr-[15px] mx-auto my-[5%] modal-img">
             <Image
-              className="asdasd"
+              className="my-7 asdasd"
               src={"/logo200.png"}
               alt={""}
               width={"200"}
               height={"200"}
             />
-            <div className="flex flex-wrap justify-center small-img">
+            <div className="flex flex-wrap justify-center mb-10 small-img">
               {modalImg &&
                 modalImg.map((value, key) => {
                   return (
@@ -91,14 +91,14 @@ function Modal() {
                 })}
             </div>
           </div>
-          <div className="flex flex-col w-full modal-items space-y-2 px-[15px]  ">
+          <div className="flex flex-col w-full modal-items space-y-1 pl-[15px]  ">
             {modalItems &&
               modalItems.map((modal, key) => {
                 return (
                   <li
                     key={key}
                     className={
-                      "flex text-left items-center text-white bg-primary-red rounded-[3px] px-4 py-3"
+                      "flex text-left items-center text-white bg-primary-red rounded-[3px] px-4 py-[10px]"
                     }
                   >
                     {modal.icon}
