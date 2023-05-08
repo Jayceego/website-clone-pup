@@ -7,6 +7,7 @@ import Medias from "@/components/media"
 import Footer from "../footer"
 import Line from "@/components/line"
 import Head from "next/head"
+import Modal from "@/components/modal"
 
 const NavigationItems = [
   {
@@ -39,7 +40,7 @@ const NavigationItems = [
 export default function Home() {
   return (
     <>
-
+    <Modal/>
     <div className="wrapper">
       <Navbar items={NavigationItems} />
       <Header/>

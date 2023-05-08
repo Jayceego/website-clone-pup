@@ -212,6 +212,23 @@ body {
   display: none;
 }
 
+.modal-container {
+  transition: transform 0.3s ease-out;
+}
+
+.modal {
+  background-image: url("/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.modal svg {
+  height: 18px;
+  width: auto;
+}
+
 .slider:hover .swiper-button-prev, .slider:hover .swiper-button-next {
   display: grid;
   place-content: center;
@@ -261,6 +278,19 @@ body {
   .wrapper .container ul li {
     display: inline-flex;
   }
+  .modal {
+    max-width: 600px;
+  }
+  .modal .below {
+    display: flex;
+    align-items: center;
+  }
+  .modal .modal-img {
+    width: 41.66666667%;
+  }
+  .modal .modal-items {
+    width: 58.33333333%;
+  }
   .container > * {
     max-width: 750px;
   }
@@ -272,6 +302,12 @@ body {
   .articles {
     display: flex;
     justify-content: center;
+  }
+  .modal {
+    max-width: 900px;
+  }
+  .modal .modal-img, .modal .modal-items {
+    width: 50%;
   }
   .container > * {
     max-width: 970px;
