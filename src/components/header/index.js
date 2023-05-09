@@ -3,7 +3,6 @@ import { FaSearch } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import Link from 'next/link';
 
-
 function Header() {
   return (
     <div className='container header bg-primary-dark_red md:bg-transparent'>
