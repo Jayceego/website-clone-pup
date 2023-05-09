@@ -13,7 +13,7 @@ module.exports = {
           dark_red: '#691819',
           low_dark: '#666',
           gray: '#555',
-          dark_gray: '#888',
+          dark_gray: '#888',  
           dark: '#eee', 
         },
       },

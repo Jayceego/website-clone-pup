@@ -163,6 +163,10 @@ body {
   width: 91vw !important;
 }
 
+.term .inner-term :last-child span {
+  display: none;
+}
+
 .socmed-icons div {
   display: grid;
   place-items: center;
@@ -208,8 +212,8 @@ body {
   background-color: #1DB954;
 }
 
-.term .inner-term :last-child span {
-  display: none;
+body.modal-open {
+  overflow: hidden;
 }
 
 .modal-container {
@@ -217,6 +221,38 @@ body {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   transition: transform 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.modal-open .modal {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+
+.modal-container.closing {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+}
+
+.modal.closing {
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transition: transform 300ms ease-in-out;
+  -moz-transition: transform 300ms ease-in-out;
+  -ms-transition: transform 300ms ease-in-out;
+  -o-transition: transform 300ms ease-in-out;
 }
 
 .modal {
@@ -226,7 +262,8 @@ body {
   background-position: bottom center;
   padding: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  overflow-y: auto;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 .modal svg {
   height: 18px;
