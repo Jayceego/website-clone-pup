@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
     <Modal/>
-    <div className="wrapper">
+    <div className="z-10 wrapper">
       <Navbar items={NavigationItems} />
       <Header/>
     </div>

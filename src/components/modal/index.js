@@ -86,10 +86,10 @@ const Modal = () => {
   return (
     <>
       {isOpen && (
-        <div className="fixed z-10 w-screen h-screen p-3 mx-auto modal-container">
+        <div className="fixed z-50 w-screen h-screen p-3 mx-auto modal-container">
           <div className="relative mx-auto modal ">
             <span
-              className="close text-primary-low_dark opacity-30 hover:opacity-100 text-xl mt-2 font-semibold float-right cursor-pointer mr-3"
+              className="float-right mt-2 mr-3 text-xl font-semibold cursor-pointer close text-primary-low_dark opacity-30 hover:opacity-100"
               onClick={handleClose}
             >
               &times;

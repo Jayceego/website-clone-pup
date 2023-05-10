@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Dropdown from '../dropdown-header';
 import { FaSearch } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import Link from 'next/link';
@@ -29,9 +30,10 @@ function Header() {
             The Country&apos;s 1st PolytechnicU
             </p>
           </div>
-          <ul className='flex font-bold text-primary-red font-cinzel'>
+          <ul className='flex header-items font-bold text-primary-red font-cinzel'>
             <li className='pt-[10px] px-5 cursor-pointer pl-0'>
               <a>About PUP</a>
+              <Dropdown/>
             </li>
             <li className='pt-[10px] px-5 cursor-pointer'>
               <a>Academic</a>

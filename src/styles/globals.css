@@ -24,17 +24,17 @@ body {
           backdrop-filter: blur(10px) saturate(125%);
   border-bottom: 1px solid #f2f2f2;
 }
-.wrapper .container {
+.wrapper .nav-items {
   overflow-x: hidden;
 }
-.wrapper .container ul :last-child {
+.wrapper .nav-items ul :last-child {
   display: inline;
 }
-.wrapper .container ul :nth-child(1),
-.wrapper .container ul :nth-child(2) {
+.wrapper .nav-items ul :nth-child(1),
+.wrapper .nav-items ul :nth-child(2) {
   display: inline-flex;
 }
-.wrapper .container ul li {
+.wrapper .nav-items ul li {
   white-space: nowrap;
   display: none;
 }
@@ -186,6 +186,53 @@ body {
 
 .term .inner-term :last-child span {
   display: none;
+}
+
+.header-items li:hover .dropdown {
+  opacity: 1;
+}
+
+.dropdown {
+  opacity: 0;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 1px solid #800000;
+  margin-top: 3px;
+  transition: opacity 0.3s ease-in-out;
+  transform: translateX(-5%);
+  -webkit-transform: translateX(-5%);
+  -moz-transform: translateX(-5%);
+  -ms-transform: translateX(-5%);
+  -o-transform: translateX(-5%);
+  box-shadow: 0px 20px 44px 0px rgba(0, 0, 0, 0.68);
+}
+.dropdown a {
+  width: 100%;
+  display: block;
+  color: #555;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Noto Sans", sans-serif;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.dropdown a:hover {
+  border-radius: 8px;
+  color: #800;
+  padding-left: 18px;
+  background-color: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .socmed-icons div {
@@ -358,13 +405,13 @@ body.modal-open {
   }
 }
 @media (min-width: 768px) {
-  .wrapper .container ul :last-child {
+  .wrapper .nav-items ul :last-child {
     margin-left: auto;
   }
-  .wrapper .container ul :nth-child(5) {
+  .wrapper .nav-items ul :nth-child(5) {
     display: none;
   }
-  .wrapper .container ul li {
+  .wrapper .nav-items ul li {
     display: inline-flex;
   }
   .modal-container {
@@ -406,10 +453,10 @@ body.modal-open {
   .container > * {
     max-width: 970px;
   }
-  .wrapper .container ul :last-child {
+  .wrapper .nav-items ul :last-child {
     margin-left: auto;
   }
-  .wrapper .container ul :nth-child(5) {
+  .wrapper .nav-items ul :nth-child(5) {
     display: inline-flex;
   }
   .blogs .img {

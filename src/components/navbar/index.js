@@ -16,7 +16,7 @@ return (
 const Navbar = ({ items }) => {
 return (
     <div className='nav'>
-        <nav className=' container text-[10pt] mx-auto'>
+        <nav className=' container nav-items text-[10pt] mx-auto'>
         <ul className='flex items-center justify-center mx-auto'>
             <li className='px-4 transition-colors duration-200 cursor-pointer place-items-center hover:bg-primary-red '>
                 <a href='https://www.gov.ph/' className='py-[3px]'>

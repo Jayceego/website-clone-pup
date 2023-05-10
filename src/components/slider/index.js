@@ -18,7 +18,7 @@ const imgSrc = [
 
 function Slider(imgSwiper) {
   return (
-    <div className="relative slider">
+    <div className="-z-50 slider">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
