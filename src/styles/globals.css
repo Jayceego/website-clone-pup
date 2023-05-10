@@ -295,6 +295,18 @@ body.modal-open {
   height: 18px;
   width: auto;
 }
+.modal .modal-items li {
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms;
+  -moz-transition: all ease-in-out 200ms;
+  -ms-transition: all ease-in-out 200ms;
+  -o-transition: all ease-in-out 200ms;
+}
+.modal .modal-items li:hover {
+  cursor: pointer;
+  background-color: rgb(95, 0, 0);
+  padding-left: 1.6rem;
+}
 
 .slider:hover {
   transition: all ease 300ms;
