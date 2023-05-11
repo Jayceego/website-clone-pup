@@ -6,6 +6,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+*{
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-family: Inter, "Noto Sans", sans-serif;
   font-size: 1rem;
@@ -244,8 +248,8 @@ body {
   -moz-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
-  
-a{
+
+  a {
     width: 100%;
     display: block;
     color: #555;
@@ -256,7 +260,7 @@ a{
     padding: 8px 16px;
     // padding-right: 30px;
     text-decoration: none;
-    border: .5px solid rgba(0, 0, 0, 0.025);
+    border: 0.5px solid rgba(0, 0, 0, 0.025);
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -272,7 +276,7 @@ a{
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-}
+  }
 }
 
 .socmed-icons {
@@ -348,27 +352,19 @@ body.modal-open {
   -ms-transform: translateY(0%);
   -o-transform: translateY(0%);
 }
-.modal-container.closing {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 300ms ease-in-out;
-  -webkit-transition: opacity 300ms ease-in-out;
-  -moz-transition: opacity 300ms ease-in-out;
-  -ms-transition: opacity 300ms ease-in-out;
-  -o-transition: opacity 300ms ease-in-out;
-}
 
 .modal.closing {
+  opacity: 0;
   transform: translateY(-100%);
-  transition: transform 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
-  -webkit-transition: transform 300ms ease-in-out;
-  -moz-transition: transform 300ms ease-in-out;
-  -ms-transition: transform 300ms ease-in-out;
-  -o-transition: transform 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
 }
 
 .modal {
@@ -379,8 +375,11 @@ body.modal-open {
   padding: 15px;
   box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
   transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   svg {
     height: 18px;
     width: auto;
@@ -400,6 +399,99 @@ body.modal-open {
       padding-left: 1.6rem;
     }
   }
+}
+
+// floaters
+.service-menu {
+  display: block;
+  position: fixed;
+  bottom: 30vh;
+  right: 10px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  background-color: rgba(188, 188, 188, 0.6);
+  backdrop-filter: blur(10px) saturate(125%);
+  overflow: hidden;
+  font-size: normal;
+  cursor: pointer;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 18px;
+    margin: 0px 5px;
+  }
+}
+.service-menu:hover {
+  width: 210px;
+  background-color: rgba(188, 188, 188, 2.5);
+}
+.arrowUp {
+  opacity: 0;
+  border-radius: 25px ;
+  -webkit-backdrop-filter: blur(10px) saturate(125%) ;
+  backdrop-filter: blur(10px) saturate(125%) ;
+  -webkit-border-radius: 25px ;
+  -moz-border-radius: 25px ;
+  -ms-border-radius: 25px ;
+  -o-border-radius: 25px ;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+.arrowUp.visible{
+  display: grid;
+  place-items: center ;
+  opacity: 1;
+  position: fixed;
+  bottom: 18px;
+  right: 13px;
+  z-index: 999999;
+  background-color: rgba(255, 188, 0, 0.4);
+  width: 48px;
+  height: 48px;
+
+  svg{
+    cursor: pointer;
+    display: block;
+    line-height: 48px;
+    font-size: xx-large;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 25px;
+    text-align: center;
+}
+}
+
+.arrowUp:hover{
+  background-color: rgba(255, 188, 0, 0.7);
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 // swiper css

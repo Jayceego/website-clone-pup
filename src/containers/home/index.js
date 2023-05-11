@@ -8,6 +8,8 @@ import Footer from "../footer"
 import Line from "@/components/line"
 import Head from "next/head"
 import Modal from "@/components/modal"
+import Floaters from "@/components/messenger"
+import ScrollUp from "@/components/scroll-up"
 
 const NavigationItems = [
   {
@@ -40,6 +42,7 @@ const NavigationItems = [
 export default function Home() {
   return (
     <>
+    <Floaters/>
     <Modal/>
     <div className="z-10 wrapper">
       <Navbar items={NavigationItems} />
@@ -52,6 +55,7 @@ export default function Home() {
     <Line/>
     <Medias/>
     <Footer/>
+    <ScrollUp/>
     </>
   )
 }

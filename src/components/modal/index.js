@@ -8,6 +8,7 @@ import { HiBuildingLibrary } from "react-icons/hi2";
 import { FaEdit } from "react-icons/fa";
 import { FaAlignJustify } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { FaDesktop } from "react-icons/fa";
 
 const modalImg = [
   {
@@ -60,7 +61,7 @@ const modalItems = [
 ];
 
 const Modal = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -72,19 +73,26 @@ const Modal = () => {
   }, [isOpen]);
 
   const handleClose = () => {
-    const modalContainer = document.querySelector(".modal-container");
-    modalContainer.classList.add("closing");
+    const modal = document.querySelector(".modal");
+    modal.classList.add("closing");
     setTimeout(() => {
       setIsOpen(false);
     }, 300);
   };
 
-   const handleOpen = () => {
-    setIsOpen(true);
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
   };
+
 
   return (
     <>
+      <span className="z-10 service-menu" onClick={handleOpen}>
+        <i>
+          <FaDesktop />
+        </i>
+        Show services menu
+      </span>
       {isOpen && (
         <div className="fixed z-50 w-screen h-screen p-3 mx-auto modal-container">
           <div className="relative mx-auto modal ">
