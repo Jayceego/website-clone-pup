@@ -232,24 +232,31 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 8px;
   border: 1px solid #800000;
-  margin-top: 3px;
-  transition: opacity 0.3s ease-in-out;
-  transform: translateX(-5%);
-  -webkit-transform: translateX(-5%);
-  -moz-transform: translateX(-5%);
-  -ms-transform: translateX(-5%);
-  -o-transform: translateX(-5%);
+  // margin-top: 3px;
+  transition: opacity 0.2s ease-in-out;
+  transform: translateX(-7%);
+  -webkit-transform: translateX(-7%);
+  -moz-transform: translateX(-7%);
+  -ms-transform: translateX(-7%);
+  -o-transform: translateX(-7%);
   box-shadow: 0px 20px 44px 0px rgb(0 0 0 / 68%);
-
-  a {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  
+a{
     width: 100%;
     display: block;
     color: #555;
     font-size: 13px;
     font-weight: 300;
     font-family: "Noto Sans", sans-serif;
+    line-height: 1.3rem;
     padding: 8px 16px;
+    // padding-right: 30px;
     text-decoration: none;
+    border: .5px solid rgba(0, 0, 0, 0.025);
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
