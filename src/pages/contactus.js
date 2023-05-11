@@ -1,6 +1,8 @@
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
 import NavigationItems from "@/containers/helpers/navigationItem";
+import ContactContainer from "@/containers/contact";
+import Footer from "@/containers/footer";
 
 export default function contactus() {
   return (
@@ -9,6 +11,8 @@ export default function contactus() {
         <Navbar items={NavigationItems} />
         <Header />
       </div>
+      <ContactContainer />
+      <Footer />
     </main>
   );
 }

@@ -19,7 +19,7 @@ return (
         <nav className=' container nav-items text-[10pt] mx-auto'>
         <ul className='flex flex-wrap items-center justify-center mx-auto'>
             <li className='px-4 transition-colors duration-200 cursor-pointer place-items-center hover:bg-primary-red '>
-                <a href='https://www.gov.ph/' className='py-[3px]'>
+                <a href='https://www.gov.ph/' target={"_blank"} className='py-[3px]'>
                     <Image 
                     className='min-w-[33px]'
                     src="/govlogo.png"

@@ -1,7 +1,7 @@
 const NavigationItems = [
     {
       title: "Home",
-      url: "/#",
+      url: "/home",
     },
     {
       title: "Good Governance",
@@ -13,7 +13,7 @@ const NavigationItems = [
     },
     {
       title: "International Affairs",
-      url: "/#",
+      url: "/International",
     },
     {
       title: "Bid Notices and Invitation",
