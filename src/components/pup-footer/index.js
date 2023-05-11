@@ -1,4 +1,4 @@
-import FooterItem from "../footer-items";
+import FooterItem from "../../containers/helpers/footerItem";
 import Download from "../download-link";
 import Services from "../service-link";
 import Socmed from "../socmed";

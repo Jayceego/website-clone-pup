@@ -280,6 +280,10 @@ body {
 }
 
 .socmed-icons {
+  svg{
+    width: 30px;
+    height: 30px;
+  }
   div {
     display: grid;
     place-items: center;
@@ -579,6 +583,7 @@ body.modal-open {
     .below {
       display: flex;
       align-items: center;
+      gap: 14px;
     }
 
     .modal-img {

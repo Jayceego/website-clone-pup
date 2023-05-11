@@ -116,7 +116,7 @@ const Modal = () => {
             </div>
 
             <div className="below">
-              <div className="flex flex-col w-full items-center pr-[15px] mx-auto modal-img">
+              <div className="flex flex-col w-full items-center mx-auto modal-img">
                 <Image
                   className="my-[5%] asdasd"
                   src={"/logo200.png"}
@@ -140,7 +140,7 @@ const Modal = () => {
                     })}
                 </div>
               </div>
-              <div className="flex flex-col w-full modal-items gap-[5px] pl-[15px]  ">
+              <div className="flex flex-col w-full modal-items gap-[5px]">
                 {modalItems &&
                   modalItems.map((modal, key) => {
                     return (

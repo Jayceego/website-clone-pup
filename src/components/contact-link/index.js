@@ -1,4 +1,4 @@
-import FooterItem from "../footer-items";
+import FooterItem from "../../containers/helpers/footerItem";
 
 function Contact() {
   return (

@@ -244,6 +244,10 @@ body {
   -o-border-radius: 8px;
 }
 
+.socmed-icons svg {
+  width: 30px;
+  height: 30px;
+}
 .socmed-icons div {
   display: grid;
   place-items: center;
@@ -521,6 +525,7 @@ body.modal-open {
   .modal .below {
     display: flex;
     align-items: center;
+    gap: 14px;
   }
   .modal .modal-img {
     width: 41.66666667%;

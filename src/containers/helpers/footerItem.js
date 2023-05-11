@@ -1,3 +1,4 @@
+
 const FooterItem = ({ title, items }) => {
   return (
     <div>
