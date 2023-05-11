@@ -181,7 +181,7 @@ body {
 
 #twitter-widget-0,
 .twitter-timeline {
-  width: 91vw !important;
+  width: clamp(100px, 91vw, 690px) !important;
 }
 
 .term .inner-term :last-child span {
@@ -437,10 +437,6 @@ body.modal-open {
   }
   .container > * {
     max-width: 750px;
-  }
-  #twitter-widget-0,
-  .twitter-timeline {
-    width: clamp(100px, 91vw, 690px) !important;
   }
 }
 @media (min-width: 1025px) {
