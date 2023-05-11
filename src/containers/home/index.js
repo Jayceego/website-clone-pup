@@ -10,33 +10,7 @@ import Head from "next/head"
 import Modal from "@/components/modal"
 import Floaters from "@/components/messenger"
 import ScrollUp from "@/components/scroll-up"
-
-const NavigationItems = [
-  {
-    title: "Home",
-    url: "/#",
-  },
-  {
-    title: "Good Governance",
-    url: "/#",
-  },
-  {
-    title: "Transparency",
-    url: "/#",
-  },
-  {
-    title: "International Affairs",
-    url: "/#",
-  },
-  {
-    title: "Bid Notices and Invitation",
-    url: "/#",
-  },
-  {
-    title: "Contact us",
-    url: "/#",
-  }
-]
+import NavigationItems from "../helpers/navigationItem"
 
 
 export default function Home() {
