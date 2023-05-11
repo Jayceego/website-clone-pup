@@ -522,6 +522,10 @@ body.modal-open {
   background: #ffffff !important;
 }
 
+.contact-main {
+  padding: 60px 15px;
+}
+
 .page-container h1 {
   font-size: 24px;
 }
@@ -583,6 +587,19 @@ body.modal-open {
 }
 .page-container .postal {
   margin-top: 30px;
+}
+.page-container .postal .telephone {
+  font-size: 12pt;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+.page-container .postal .telephone a {
+  cursor: pointer;
+  color: #800;
+}
+.page-container .postal .telephone a:hover {
+  text-decoration: underline;
 }
 
 blockquote {
@@ -662,9 +679,11 @@ blockquote {
   }
   .leftSide {
     width: 75%;
+    padding: 0 15px;
   }
   .rightSide {
     width: 25%;
+    padding: 0 15px;
   }
   .page-container {
     display: flex;

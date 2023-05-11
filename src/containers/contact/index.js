@@ -4,11 +4,11 @@ import TableData from "../helpers/table";
 import PostalComponent from "@/components/postal";
 import PostalData from "../helpers/postal";
 
-function ContactContainer({}) {
+function ContactContainer() {
   return (
-    <div className="container pt-[60px] px-[15px] min-h-screen">
+    <div className="container min-h-screen contact-main">
       <div className="mx-auto page-container">
-        <div className=" leftSide px-[15px]">
+        <div className=" leftSide">
           <div className="w-full contact-us">
             <h1 className="mb-5 font-semibold text-primary-red">Contact us</h1>
             <p className="text-base text-primary-low_dark">
@@ -45,9 +45,14 @@ function ContactContainer({}) {
           <div className="postal">
             <h1 className="mb-5 font-semibold text-primary-red">Postal Mail and Telephone</h1>
             <PostalComponent details={PostalData}/>
+            <p className="telephone">
+              <b>Telephone</b>
+              <br/>
+              <a>View contact information of specific offices and departments</a>
+            </p>
           </div>
         </div>
-        <div className="w-full rightSide px-[15px]">
+        <div className="w-full rightSide">
           <Widget
             title="contents"
             items={[
