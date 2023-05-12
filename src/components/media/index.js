@@ -25,7 +25,6 @@ function Medias() {
             height="350"
             src="https://www.youtube.com/embed/EVp6JBwTudk?start=1"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
@@ -34,7 +33,6 @@ function Medias() {
             src="https://open.spotify.com/embed/show/6x7hlv9qZX8VpwMIRAAiRb?utm_source=generator&t=0"
             width="100%"
             height="232"
-            frameBorder="0"
             allowFullScreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"

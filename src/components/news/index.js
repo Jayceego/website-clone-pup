@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
 import "swiper/css";
 
-function News() {
+function News({items, slidesnum, head, spacing}) {
   const swiperRef = useRef(null);
 
   const handlePrevClick = () => {
@@ -21,71 +21,14 @@ function News() {
     }
   };
 
-  const newsItem = [
-    {
-      title: "PUP is top 20 in EDURANK top 100 universities in PH",
-      date: "May 03, 2023",
-      src: "/news1.jpg",
-    },
-    {
-      title: "PHIVOLCS commits to training PUP on REDAS",
-      date: "April 26, 2023",
-      src: "/news2.jpg",
-    },
-    {
-      title: "Earth Day 2023 celebrated through the arts",
-      date: "April 26, 2023",
-      src: "/news3.jpg",
-    },
-    {
-      title: "DBM Sec. Pangandaman and DepEd Usec Jumamil-Mercado receives Tanglaw ng Bayan Award",
-      date: "April 25, 2023",
-      src: "/news4.jpg",
-    },
-    {
-      title: "#GetThatBar2022: PUP Law retains top performance",
-      date: "April 25, 2023",
-      src: "/news5.jpg",
-    },
-    {
-      title: `CSSD works with various stakeholders for history
-      and cultural heritage promotion`,
-      date: "April 25, 2023",
-      src: "/news6.jpg",
-    },
-    {
-      title: `Philhealth employees nationwide take Civil Service
-      Review with ICPD`,
-      date: "April 20, 2023",
-      src: "/news7.jpg",
-    },
-    {
-      title: `PUP partners with 350 Pilipinas on "Climate Deals"`,
-      date: "April 20, 2023",
-      src: "/news8.jpg",
-    },
-    {
-      title: `CSSD officially becomes an associate member of the
-      PSSC`,
-      date: "April 12, 2023",
-      src: "/news9.jpg",
-    },
-    {
-      title: `Sen. Risa graces EMO's F2F gender sensitivity
-      training`,
-      date: "April 04, 2023",
-      src: "/news10.jpg",
-    },
-  ];
-
   return (
-    <div className="px-4 mx-auto cursor-pointer lg:m-0 mb-7">
+    <div className="px-4 mx-auto cursor-pointer articleNews lg:m-0 mb-7">
       <div className="article-title flex items-center justify-between mb-6 border-b-[1px] font-bold border-solid border-primary-light_dark">
         <a
           href="#"
           className="pb-2 text-primary-red border-b-[1px] font-bold border-solid border-primary-red"
         >
-          Latest News from the University
+          {head}
         </a>
         <div className="flex gap-1 mb-3 buttons">
           <button
@@ -113,19 +56,20 @@ function News() {
         autoplay={{
           delay: 3000,
         }}
-        centeredSlides={true}
-        slidesPerView={1}
-        spaceBetween={0}
+        centeredSlides={false}
+        slidesPerView={slidesnum}
+        slidesPerGroup={1}
+        spaceBetween={spacing}
         ref={swiperRef}
       >
-        {newsItem.map((item, index) => {
+        {items.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
               <div className="news">
                 {/* Image */}
                 <div
-                  className="relative grid lg:min-w-[450px] news-item place-items-center"
-                  style={{ backgroundImage: `url(${item.src})` }}
+                  className="relative grid news-item place-items-center"
+                  style={{ backgroundImage: `url(${slide.src})` }}
                 >
                   {/* red bg */}
                   <div className="absolute red-shade"></div>
@@ -134,9 +78,9 @@ function News() {
                 </div>
                 <div className="details">
                   <a href="#" className="text-primary-red ">
-                    {item.title}
+                    {slide.title}
                   </a>
-                  <p className="text-sm text-primary-gray">{item.date}</p>
+                  <p className="text-sm text-primary-gray">{slide.date}</p>
                 </div>
               </div>
             </SwiperSlide>

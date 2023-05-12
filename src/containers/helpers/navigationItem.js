@@ -13,7 +13,7 @@ const NavigationItems = [
     },
     {
       title: "International Affairs",
-      url: "/International",
+      url: "/internationalaffairs",
     },
     {
       title: "Bid Notices and Invitation",
